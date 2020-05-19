@@ -30,12 +30,6 @@ class App extends Component {
     // Side Video Objects
     sideVideo: [
       {
-      id: '0', 
-      title: 'BMX Rampage: 2018 Highlights', 
-      channel: 'Red Cow', 
-      image: 'video-list-0.jpg' 
-      },
-      {
       id: '1', 
       title: 'Become A Travel Pro In One Easy Lesson', 
       channel: 'Todd Welch', 
