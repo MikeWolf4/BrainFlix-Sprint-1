@@ -1,0 +1,599 @@
+
+//////////////////////// VIDEO AND COMMENTS ////////////////////////
+////////////////////////       VIDEO        ////////////////////////
+@import "./fonts";
+@import "./variables";
+
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 1440px) {
+  
+}
+
+.mainvideo-container {// constains all mainVideo elements
+  background: black;
+display: flex;
+flex-direction: column;
+height: auto;
+width: 100%;
+
+}
+
+.video{
+display: flex;
+margin: auto;
+height: auto;
+width:100%;
+max-width: 1080px;
+padding:0;
+object-fit: cover;
+}
+
+.mainvideo-container:hover .video-player__controls{
+  transform: translateY(0%);
+}
+
+.mainvideo{// video container
+  position: relative;
+    display: flex;
+    height: auto;
+    //height: 183px;
+    width: 100%;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+.test__group{
+  @media (max-width: 767px) {
+    margin: 0 auto;
+    padding-right: 65px;
+  }
+}
+.main-video-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 720px;
+    @media (min-width: 768px) {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    @media (min-width: 1440px) {
+      margin-left: 180px;
+      margin-right: 180px;
+    }
+    &__title{// main video details - title
+      display: flex;
+      margin-top: 32px;
+      //border: 1px solid orange;
+    }
+    &__divider{
+      border-bottom: 2px solid $clrGlobalTextLabelStyle;
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+      }
+      
+
+    }
+    &__chan-date-container{// main video details - channel/date container
+      //border: 1px solid orange;
+      
+      display: flex;
+    }
+    &__chan-date--channel{// main video details - channel
+     // border: 1px solid orange;
+      margin-right: 8px;
+    }
+    &__views-likes-container{// main video details - view/like container
+      //border: 1px solid orange;
+      display: flex;
+      @media (min-width: 768px) {
+        margin-left: 350px;
+      }
+      @media (min-width: 1440px) {
+        margin-left: 340px;
+      }
+    }
+    &__views-container{// main video details - views/views img container
+      display: flex;
+      flex-direction: row;
+    }
+    &__likes-container{// main video details - likes/likes img container
+      display: flex;
+      flex-direction: row;
+    }
+    &__views{// main video details - views
+      margin-right: 24px;
+    }
+    &__views-img{// main video details - views img
+      margin-right: 8px;
+    }
+    &__likes{// main video details - likes
+    
+    }
+    &__likes-img{// main video details - likes img
+      margin-right: 8px;
+    }
+    &__desc-container{
+      
+      margin-top: 10px;
+      @media (min-width: 768px) {
+        margin-right:200px;
+      }
+      
+    }
+    &__description{
+      padding-top: 24px;
+      margin-top: 0px;
+    }
+}
+
+ 
+////////////////////////      COMMENTS      ////////////////////////
+
+//<---------- Comment section - Start---------->
+
+.comment__section {
+  display: flex;
+  flex-direction: column;
+  min-width: 288px;
+  //width: 90%;
+  padding: 0;
+  margin: auto 16px;
+  @media (min-width: 768px) {
+    min-width: 520px;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 1440px) {
+    min-width: 520px;
+    width: 90%;
+    margin-bottom: 40px;
+
+    //border: 2px solid red;
+  }
+}
+.h1sect {
+  //border: 2px solid red;
+  margin: 40px 0px 0px 0px;
+  // @include fontaddin(
+  //   $m_H1Header_FSize,
+  //   $m_H1Header_LHeight,
+  //   $fontAvenirBold,
+  //   $global_TextColor
+  // );
+  font-weight: 900;
+  @media (min-width: 768px) {
+    // @include fontaddin(
+    //   $h1Header_FSize,
+    //   $h1Header_LHeight,
+    //   $fontAvenirBold,
+    //   $global_TextColor
+    // );
+    position: relative;
+    left: 8px;
+  }
+  @media (min-width: 1440px) {
+    // @include fontaddin(
+    //   $h1Header_FSize,
+    //   $h1Header_LHeight,
+    //   $fontAvenirBold,
+    //   $global_TextColor
+    // );
+    position: relative;
+    left: 165px;
+  }
+}
+.comment-form {
+  //border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: 768px) {
+    height: 200px;
+    width:720px
+    
+  }
+  @media (min-width: 1440px) {
+    margin-right:155px ;
+    margin-left: 165px;
+    height: 200px;
+    width:720px
+  }
+}
+.comment {
+  //display: flex;
+
+  &__pic {
+    position: relative;
+    top: 75px;
+    left: 3px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: $clrGlobalTextFieldBorder;
+    @media (min-width: 768px){
+      bottom: 180px;
+      left: 8px;
+      right: 0px;
+    }
+    @media (min-width: 1440px) {
+      bottom: 180px;
+      left: 8px;
+      right: 0px;
+    }
+  }
+  &__container {
+    
+    margin: auto auto;
+    padding: 10px 0 10px 0;
+    height: auto;
+    width: 290px;
+
+    border-bottom: 2px solid $clrGlobalTextFieldBorder;
+    border-top: 2px solid $clrGlobalTextFieldBorder;
+    @media (min-width: 768px) {
+      height: auto;
+      width: 720px;
+      max-width: 720px;
+      margin-right: 230px;
+      margin-left:0px;
+    }
+    @media (min-width: 1440px) {
+      height: auto;
+      width: 100%;
+      margin-left: 165px;
+      margin-right: 0px;
+      max-width: 720px;
+    }
+  }
+  ///////////////
+  &__username {
+    position: relative;
+    bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 110px;
+    top:0px;
+    left: 60px;
+    right: 0px;
+    // @include fontaddin(
+    //   $m_H2Subheader_FSize,
+    //   $m_H2Subheader_LHeight,
+    //   $fontAvenirBold,
+    //   $global_TextColor
+    // );
+    font-weight: 700;
+    //display: inline-flex;
+
+    @media (min-width: 768px){
+      width: 210px;
+      bottom: 5px;
+      left: 70px;
+      right: 0px;
+    }
+    @media (min-width: 1440px) {
+      width: 210px;
+      bottom: 5px;
+      left: 70px;
+      right: 0px;
+    }
+  }
+  ///////////////
+  &__message {
+    position: relative;
+    bottom: 55px;
+    left: 60px;
+    right: 0px;
+    // @include fontaddin(
+    //   $m_H5Label_FSize,
+    //   $m_H5Label_LHeight,
+    //   $fontAvenirBold,
+    //   $global_TextColor
+    // );
+    display: inline-flex;
+    margin: 0;
+    word-wrap: break-word;
+    width: 230px;
+    min-height: 100px;
+    //border: 2px solid green;
+    //margin-left: 15%;
+
+    @media (min-width: 768px) {
+      width: 624px;
+      bottom: 55px;
+      left: 70px;
+      right: 0px;
+    }
+    @media (min-width: 1440px) {
+      width: 624px;
+      bottom: 55px;
+      left: 70px;
+      right: 0px;
+    }
+  }
+  /////////////
+  &__date {
+    position: relative;
+    bottom: 57px;
+    left: 180px;
+    right: 0px;
+    margin-right: 0;
+    padding-right: 0;
+    // @include fontaddin(
+    //   $m_H2Subheader_FSize,
+    //   $m_H2Subheader_LHeight,
+    //   $fontAvenirBold,
+    //   $clrGlobalTextLabelStyle
+    // );
+    @media (min-width: 768px){
+      bottom: 55px;
+      left: 310px;
+      right: 0px;
+    }
+    @media (min-width: 1440px) {
+      bottom: 55px;
+      left: 310px;
+      right: 0px;
+    }
+  }
+}
+//////////////////////////////////////////////////////////////////////
+
+
+
+
+.input1 {
+  position: relative;
+  top: -20px;
+  bottom: 0px;
+  left: 62px;
+  right: 0px;
+
+  // @include fontaddin(
+  //   $m_H5Label_FSize,
+  //   $m_H5Label_LHeight,
+  //   $fontAvenirBold,
+  //   $global_TextColor
+  // );
+  font-weight: 600;
+  color: $clrGlobalTextLabelStyle;
+  @media (min-width: 768px){
+    top: 0px;
+    bottom: 0px;
+    left: 120px;
+    right: 0px;
+  }
+  @media (min-width: 1440px) {
+    top: 0px;
+    bottom: 0px;
+    left: 120px;
+    right: 0px;
+  }
+}
+.input2 {
+  position: relative;
+  top: 0px;
+  bottom: 30px;
+  left: 62px;
+  right: 0px;
+  // @include fontaddin(
+  //   $m_H5Label_FSize,
+  //   $m_H5Label_LHeight,
+  //   $fontAvenirBold,
+  //   $global_TextColor
+  // );
+  font-weight: 600;
+  color: $clrGlobalTextLabelStyle;
+  @media (min-width: 768px){
+    top: -20px;
+    bottom: 0px;
+    left: 70px;
+    right: 0px;
+  }
+  @media (min-width: 1440px) {
+    top: -20px;
+    bottom: 0px;
+    left: 70px;
+    right: 0px;
+  }
+}
+////////////////////////////////////////////////////////////////
+.input {
+  &__pic {
+    position: relative;
+    top: 72px;
+    bottom: 0px;
+    left: 3px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-image: url(../assets/Images/Mohan-muruge.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    //background-color: $clrGlobalTextFieldBorder;
+    @media (min-width: 768px) {
+      position: relative;
+      top: 45px;
+      bottom: 0px;
+      left: 8px;
+    }
+    @media (min-width: 1440px) {
+      position: relative;
+      top: 45px;
+      bottom: 0px;
+      left: 8px;
+    }
+  }
+  
+  &__comment {
+    position: relative;
+    bottom: 0px;
+    left: 62px;
+    right: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    // @include fontaddin(
+    //   $m_H5Label_FSize,
+    //   $m_H5Label_LHeight,
+    //   $fontAvenirBold,
+    //   $global_TextColor
+    // );
+    border-radius: 4px;
+    border: 2px solid $clrGlobalTextLabelStyle;
+    height: 96px;
+    width: 224px;
+    &:hover{
+      border: 2px solid $clrBrainFlixCtaTextLink;
+    }
+
+    @media (min-width: 768px){
+      width: 436px;
+      height: 45px;
+      position: relative;
+      top: -18px;
+      bottom: 0px;
+      left: 70px;
+      right: 0px;
+    }
+    @media (min-width: 1440px) {
+      width: 436px;
+      height: 45px;
+      position: relative;
+      top: -18px;
+      bottom: 0px;
+      left: 70px;
+      right: 0px;
+    }
+  }
+  &__button {
+    position: relative;
+    bottom: 0px;
+    left: 62px;
+    right: 0px;
+    margin-bottom: 32px;
+    background: $clrBrainFlixCtaTextLink;
+    @include fontaddin(
+      $m_H2Subheader_FSize,
+      $m_H2Subheader_LHeight,
+      $fontAvenirBold,
+      $clrGlobalTextFieldBgFill
+    );
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 40px 32 -4 #888888;
+
+    height: 48px;
+    width: 224px;
+    &:hover {
+      background: $clrBrainFlixCtaHover;
+    }
+
+    @media (min-width: 768px) {
+      width: 155px;
+      position: relative;
+      top: -79px;
+      bottom: 0px;
+      left: 535px;
+      right: 0px;
+    }
+    @media (min-width: 1440px) {
+      width: 155px;
+      position: relative;
+      top: -79px;
+      bottom: 0px;
+      left: 535px;
+      right: 0px;
+    }
+  }
+}
+
+.date-fix{
+  display: flex;
+  widows: 100px;
+}
+
+
+
+
+
+/// video player controls /// -based from Jims code pen
+.video-player {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  &__video {
+    max-width: 100%;
+  }
+  &__controls {
+    position: absolute;
+    z-index: 99;
+    //top: 5rem;
+    bottom: 0.375rem;
+    margin-right: 1px;
+    margin-left: 1px;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(130%);
+  }
+  &__btn {
+    padding: 0.625rem;
+    margin: 0 0.187rem;
+    border-radius: 0.187rem;
+    color: white;
+    background: rgba(black, 0.6);
+    border: unset;
+    box-shadow: unset;
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      background: rgba(black, 1);
+      outline: 0;
+    }
+  }
+  &__btn-group {
+    display: flex;
+  }
+  &__progress-bar {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 0.187rem;
+    padding: 0.625rem;
+    border-radius: 0.187rem;
+    color: white;
+    background: rgba(black, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__progress-timeline {
+    height: 0.187rem;
+    margin-right: 0.625rem;
+    background: grey;
+    flex-grow: 1;
+  }
+  &__progress-scrubber {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    left: 0.624rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__progress-text {
+    text-align: center;
+  }
+}

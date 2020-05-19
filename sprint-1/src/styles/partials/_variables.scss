@@ -1,0 +1,109 @@
+// Typography <-- START ------------------------->
+
+// DESK & TABLET TEXT STYLES -- START -->
+// H1 - Hero Header
+$h1Hero_FSize: 60px;
+$h1Hero_LHeight: 68px;
+
+// H1 - Header
+$h1Header_FSize: 36px;
+$h1Header_LHeight: 44px;
+
+// H2 - Header
+$h2Header_FSize: 24px;
+$h2Header_LHeight: 32px;
+
+// H3 - Subheader
+$h3Subheader_FSize: 24px;
+$h3Subheader_LHeight: 32px;
+
+// H4 - Paragraph & comments
+$h4ParaCom_FSize: 14px;
+$h4ParaCom_LHeight: 22px;
+
+// H5 - LABELS
+$h5Label_FSize: 12px;
+$h5Label_LHeight: 20px;
+// DESK & TABLET TEXT STYLES -- END -->
+
+// MOBILE TEXT STYLES -- START -->
+// H1 - Mobile Header
+$m_H1Header_FSize: 24px;
+$m_H1Header_LHeight: 33px;
+
+// H2 - Mobile Subheader
+$m_H2Subheader_FSize: 14px;
+$m_H2Subheader_LHeight: 22px;
+
+// H4 - Mobile Paragraph
+$m_H4Paragraph_FSize: 13px;
+$m_H4Paragraph_LHeight: 18px;
+
+// H4 - Lists & contact information
+$m_H4ListCont_FSize: 13px;
+$m_H4ListCont_LHeight: 18px;
+
+// H5 - Label
+$m_H5Label_FSize: 12px;
+$m_H5Label_LHeight: 20px;
+
+// H5 - modified
+$m_H2Mod_FSize: 16px;
+$m_H2Mod_LHeight: 33px;
+// MOBILE TEXT STYLES -- END -->
+
+// GLOBAL TEXT STYLE COLOR -- START -->
+$global_TextColor: #323232;
+
+// GLOBAL TEXT STYLE COLOR -- END -->
+
+// GLOBAL FONT STYLE  <-- START -->
+// @font-face {
+//   font-family: "Avenir Next Regular", sans-serif;
+//   src: url(../../assets/Font/AvenirNextProLT/Linotype\-\AvenirNextLTPro-Regular.otf)
+//     format("opentype");
+//   font-weight: 400;
+// }
+// $fontAvenirReg: "Avenir Next Regular", sans-serif;
+// @font-face {
+//   font-family: "Avenir Next Demi Bold", sans-serif;
+//   src: url(../../assets/Font/AvenirNextProLT/Linotype\-\AvenirNextLTPro-Demi.otf)
+//     format("opentype");
+//   font-weight: 600;
+// }
+// $fontAvenirDemBold: "Avenir Next Demi Bold", sans-serif;
+// @font-face {
+//   font-family: "Avenir Next Bold", sans-serif;
+//   src: url(../../assets/Font/AvenirNextProLT/Linotype\-\AvenirNextLTPro-Bold.otf)
+//     format("opentype");
+//   font-weight: bold;
+// }
+$fontAvenirBold: "Avenir Next Bold", sans-serif;
+// GLOBAL FONT STYLE  <-- END -->
+// Typography <-- END ------------------------->
+
+// Color Palette <-- START ------------------------->
+// GLOBAL COLORS -- START -->
+$clrGlobalTextLabelStyle: #afafaf;
+$clrGlobalTextFieldBorder: #e1e1e1;
+$clrGlobalTextFieldBgFill: #fafafa;
+// GLOBAL -- END -->
+
+// INSTOCK COLORS -- START -->
+$clrInstockNavBgFill: #323232;
+$clrInstockCtaTextLink: #004892;
+$clrInstockCtaHover: #002f5f;
+// INSTOCK COLORS -- END -->
+
+// BRAINFLIX COLORS -- START -->
+$clrBrainFlixNavBgFill: #323232;
+$clrBrainFlixCtaTextLink: #0095ff;
+$clrBrainFlixCtaHover: #0065ad;
+// BRAINFLIX COLORS -- END -->
+
+// BANDSITE COLORS -- START -->
+$clrBandSiteNavBgFill: #323232;
+$clrBandSiteCtaTextLink: #323232;
+$clrBandSiteCtaHover: #0065ad;
+// BANDSITE COLORS -- END -->
+// Color Palette <-- END ------------------------->

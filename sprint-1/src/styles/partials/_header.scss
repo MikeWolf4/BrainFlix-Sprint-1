@@ -1,0 +1,131 @@
+@import "./fonts";
+@import "./variables";
+
+
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 1440px) {
+  
+}
+.header-container{// header - container
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    height: 169px;
+    width: 90%;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        margin-left: 24px;
+        margin-right: 24px;
+        height: 80px;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+}
+.header{
+    &__logo-container{// header - logo container
+        display: flex;
+        margin: 0 auto;
+        height: 48px;
+    }
+    &__logo{
+        @media (min-width: 1440px) {
+            margin-left:110px;
+        }
+    }
+    &__search-container{// header - search container
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 8px;
+        &:hover .header__search-button{
+            border-top: 1px solid $clrBrainFlixCtaTextLink;
+            border-left: 1px solid $clrBrainFlixCtaTextLink;
+            border-bottom: 1px solid $clrBrainFlixCtaTextLink;
+        }
+        &:hover .header__search-input{
+            border-top: 1px solid $clrBrainFlixCtaTextLink;
+            border-right: 1px solid $clrBrainFlixCtaTextLink;
+            border-bottom: 1px solid $clrBrainFlixCtaTextLink;
+        }
+
+        @media (min-width: 768px) {
+            margin-left:120px;
+            margin-right: 24px;
+        }
+        @media (min-width: 1440px) {
+            margin-left:600px;
+        }
+        
+    }
+    ////////////////////////////////////////////
+    &__search-button{// header - search button
+        border-top: 1px solid $clrGlobalTextLabelStyle;
+        border-left: 1px solid $clrGlobalTextLabelStyle;
+        border-bottom: 1px solid $clrGlobalTextLabelStyle;
+        display: flex;
+        padding-right: 10;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        height: 48px;
+        width: 48px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    &__search-input{// header - search input
+        display: flex;
+        border-top: 1px solid $clrGlobalTextLabelStyle;
+        border-right: 1px solid $clrGlobalTextLabelStyle;
+        border-bottom: 1px solid $clrGlobalTextLabelStyle;
+        border-left: none;
+        border-radius: 0px 4px 4px 0px;
+        height: 48px;
+        width: 240px;
+    }
+
+    &__search-input:hover{
+        border-top: 1px solid $clrBrainFlixCtaTextLink;
+        border-right: 1px solid $clrBrainFlixCtaTextLink;
+        border-bottom: 1px solid $clrBrainFlixCtaTextLink;
+    }
+    ////////////////////////////////////////////////////////////
+    &__upload-container{// header - upload container
+        
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    &__upload-button{// header - upload button
+        
+        background: $clrBrainFlixCtaTextLink;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-right: 16px;
+        color: white;
+        height: 48px;
+        width: 220px;
+        @media (min-width: 768px) {
+            margin-right: 24px;
+            width: 90px;
+        }
+    }
+    &__upload-button:hover{
+        background: $clrBrainFlixCtaHover;
+    }
+    &__upload-button-plus{
+        padding-left: 65px;
+        padding-right: 8px;
+        @media (min-width: 768px) {
+            padding-left: 8px;
+        }
+    }
+    &__upload-icon{// header - upload icon
+        display: flex;
+        height: 48px;
+        width: 48px;
+        border-radius: 5999999px;
+    }
+}

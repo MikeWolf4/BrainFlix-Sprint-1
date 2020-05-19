@@ -1,0 +1,75 @@
+.videolist-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    
+    @media (min-width: 1440px) {
+        position: relative;
+        bottom: 1505px;
+        left:905px;
+        
+        border-left: 1px solid grey;
+      }
+  }
+.video-list-title{
+  margin: auto;
+  padding-right: 190px;
+  @media (min-width: 768px) {
+    padding-left: 24px;
+    margin: 0;
+  }
+}
+.videocard{
+  display: flex;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 0px;
+  align-items: center;
+  @media (min-width: 768px) {
+    margin-left: 24px;
+    margin-right: 24px;
+    justify-content: start;
+  }
+  @media (min-width: 1440px) {
+  
+  }
+  &__img-container{
+    display: flex;
+    height: 70px;
+    width: 120px;
+  }
+  &__img{
+    display: flex;
+    height: 70px;
+    width: 120px;
+    border-radius: 4px;
+  }
+  &__channel-title-container{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     line-height: 1.2em;
+     width: 170px;
+     height: 2em;
+     overflow: hidden;
+     margin-bottom: 16px;
+     @media (min-width: 768px) {
+        white-space: normal;
+        overflow: visible;
+        width: 300px;
+      }
+    //border: 1px solid black;
+ 
+  }
+  &__channel{
+    margin-top: 0px;
+    //border: 1px solid black;
+  }
+
+}
